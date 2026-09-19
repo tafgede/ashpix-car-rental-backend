@@ -12,7 +12,7 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Ashpix Car Rental Fleet Management", version="2.0")
 
-app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=False,allow_credentials=True,
+app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=False,
                    allow_methods=["*"], allow_headers=["*"])
 
 def serialize(obj):
